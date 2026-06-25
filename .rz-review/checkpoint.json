@@ -1,0 +1,1015 @@
+{
+  "version": 1,
+  "contexts": [
+    "architecture",
+    "backend",
+    "conventions",
+    "domain",
+    "risk-map",
+    "security",
+    "testing",
+    "workflows"
+  ],
+  "files": {
+    ".config/dotnet-tools.json": {
+      "classification": "config",
+      "hash": "f2cdfd7ba39341679ad42f736e7ab0119034e1d13fc294f105fc3a0949e65f3c"
+    },
+    ".csharpierignore": {
+      "classification": "other",
+      "hash": "7ad07529373e0f4a2b0a4b85c033d11c7868e7be748a748ffa465df26ed77d0c"
+    },
+    ".dockerignore": {
+      "classification": "config",
+      "hash": "8a788a69311106c28c6f63503cffea988cdcab7e61af7e268cb07ea00ccb1d5b"
+    },
+    ".gitignore": {
+      "classification": "config",
+      "hash": "60a5211a2ce3126e036554c44764be90f171b8a5090d39a65deecb28d6ff8161"
+    },
+    ".gitlab-ci.yml.disabled": {
+      "classification": "other",
+      "hash": "70d19373541d7b3df3e1087386c0536798336fc1039da187e266af99f4ecf2fd"
+    },
+    ".rz-review.json": {
+      "classification": "config",
+      "hash": "cb8ee0ca64619389aa30b3453525a7de2accd5c2b990ab03cd7693d2fa4f0896"
+    },
+    "CODEBASE_MAP.md": {
+      "classification": "doc",
+      "hash": "0825c15fd83bfb1159f04f8fc7f25cf2e682086575e717585212bd9e7360295b"
+    },
+    "CONTEXT.md": {
+      "classification": "doc",
+      "hash": "932e096af6e8ec570bdab91d4fcece0c83c6d457e6240840d24ed4f59ce8238f"
+    },
+    "CONTRIBUTING.md": {
+      "classification": "doc",
+      "hash": "7f8f0075c4460722a700196c994ac67511ff19fb9f64a9c10870869b177d99bf"
+    },
+    "CoinBank.Domain/CoinBank.Domain.csproj": {
+      "classification": "other",
+      "hash": "8279cd83d3005c5cdffcd4aa5ab3bca98110bf2abe2bf9255459388f83c0f957"
+    },
+    "CoinBank.Domain/Collections/Log.cs": {
+      "classification": "source",
+      "hash": "fbba7f4fe88df0702201a52f02b1b4a0ad504046502afca87ddf72c2fc6dd9ad"
+    },
+    "CoinBank.Domain/Collections/PreSale.cs": {
+      "classification": "source",
+      "hash": "5634a44b2b4299f23edfc1e3850611d42d6d0895b8d3d8192368b095da53dd66"
+    },
+    "CoinBank.Domain/Collections/PreSaleOrder.cs": {
+      "classification": "source",
+      "hash": "c37179fe8eae44a17a6bcef9fb2d6cec193b23fbf46e8d32b443d8129b82612e"
+    },
+    "CoinBank.Domain/Collections/PreSaleRelease.cs": {
+      "classification": "source",
+      "hash": "38b333843990dbf879b6d2d5abd13eb94be0413c042bb04c1651453459a58b40"
+    },
+    "CoinBank.Domain/Collections/RequestLog.cs": {
+      "classification": "source",
+      "hash": "e37f32f99459feeb598fc741356148172dd74bcf569f1657f94fea96f0d3cf6e"
+    },
+    "CoinBank.Domain/Collections/Stake.cs": {
+      "classification": "source",
+      "hash": "4088227a8c8df5d89e3aec5b1558f1272435bfdd1400ec428bdf5c07ba92bcbd"
+    },
+    "CoinBank.Domain/Collections/Swap.cs": {
+      "classification": "source",
+      "hash": "a712e506724dd01d2f0d35491d1843551c8b7fe450432106b063dff55de2bc66"
+    },
+    "CoinBank.Domain/Collections/TransactionLog.cs": {
+      "classification": "source",
+      "hash": "339a9da79d9bbd25633287f8a562e14b8b9dc08f3c65b4eeef41fa569bf911d2"
+    },
+    "CoinBank.Domain/Collections/User.cs": {
+      "classification": "source",
+      "hash": "9a781c78718b6bda538d6648a7cbe10678f32690c57582e388d4bf89c072384d"
+    },
+    "CoinBank.Domain/Collections/Withdrawal.cs": {
+      "classification": "source",
+      "hash": "5524af5ccc64bcf138c27d8e5ecc004ee51d0caf477dbb38c2daf3a9a7441dca"
+    },
+    "CoinBank.Domain/Repositories/Contracts/ILogRepository.cs": {
+      "classification": "source",
+      "hash": "4d61f1b9ce9d5a26dde59e863907460bedc0e29021e9cfe05cb7decae19120b7"
+    },
+    "CoinBank.Domain/Repositories/Contracts/IPreSaleOrderRepository.cs": {
+      "classification": "source",
+      "hash": "fb6fc3e53dbce1fc988da1ccbe5e91522974354f645c32982a4764d46bdb952d"
+    },
+    "CoinBank.Domain/Repositories/Contracts/IPreSaleReleaseRepository.cs": {
+      "classification": "source",
+      "hash": "c4314e4a063a39f17c9954cc4d4214127e3c594b33106c51c3997b3293d80e0e"
+    },
+    "CoinBank.Domain/Repositories/Contracts/IPreSaleRepository.cs": {
+      "classification": "source",
+      "hash": "16772365547d8e9eac6ba23ca8bafc2df28e960c0a429a0348fddb79aa63afe6"
+    },
+    "CoinBank.Domain/Repositories/Contracts/IRequestLogRepository.cs": {
+      "classification": "source",
+      "hash": "0f09c7d0af8cfff3583ed97abfa18c15d66538db495c1fbe8ce913329b69868a"
+    },
+    "CoinBank.Domain/Repositories/Contracts/IStakeRepository.cs": {
+      "classification": "source",
+      "hash": "dd7107ac139562d1bd6a4595b51bba6e9af0a007c6f5942d742b293a0c3c72ab"
+    },
+    "CoinBank.Domain/Repositories/Contracts/ISwapRepository.cs": {
+      "classification": "source",
+      "hash": "4e657af00a7d2365de6d8f8cb6955ac18188f905e9824674e7f3534b593eb592"
+    },
+    "CoinBank.Domain/Repositories/Contracts/ITransactionLogRepository.cs": {
+      "classification": "source",
+      "hash": "4f199e986d58a95c0b84db1098e1f99180b09366d02227b4071bdd90a4fc7c04"
+    },
+    "CoinBank.Domain/Repositories/Contracts/IUserRepository.cs": {
+      "classification": "source",
+      "hash": "492e648899fa122dde6ce70d500905c7b9bf0a83720bf97c797c662def51953f"
+    },
+    "CoinBank.Domain/Repositories/Contracts/IWithdrawalRepository.cs": {
+      "classification": "source",
+      "hash": "43de6c845adc669e8fb0259331446423e7a919e9ade5a79553892b90dc06e1a3"
+    },
+    "CoinBank.Domain/Repositories/LogRepository.cs": {
+      "classification": "source",
+      "hash": "71e0ecd7cedf2759c75bfda79e31748f601ababc66b72eabb8023e83c3594ab1"
+    },
+    "CoinBank.Domain/Repositories/PreSaleOrderRepository.cs": {
+      "classification": "source",
+      "hash": "192d44d78d27333bf4984c038d0b0fcee75a8324037fb8d853951a281337728f"
+    },
+    "CoinBank.Domain/Repositories/PreSaleReleaseRepository.cs": {
+      "classification": "source",
+      "hash": "94dc1226b4d1635fabf2cfcc56c669096d448d3afe07f27f102f774d7658f7a9"
+    },
+    "CoinBank.Domain/Repositories/PreSaleRepository.cs": {
+      "classification": "source",
+      "hash": "21a70818315ace736785073d67819a63385eb3c7aebff1a85be76e6d160697ac"
+    },
+    "CoinBank.Domain/Repositories/RequestLogRepository.cs": {
+      "classification": "source",
+      "hash": "393e9eddfa080b462bf08c823f2e799f26204d254d9d625ce3b0e090ea2a77fe"
+    },
+    "CoinBank.Domain/Repositories/StakeRepository.cs": {
+      "classification": "source",
+      "hash": "145687f00e07c4f9eeadd62ddb8c7007cdcdf934f2d761c4f64124e2416deccf"
+    },
+    "CoinBank.Domain/Repositories/SwapRepository.cs": {
+      "classification": "source",
+      "hash": "9d0f17f77c883986cfa24da7da40b254307cf183eeecd9c2a3c011c66719735f"
+    },
+    "CoinBank.Domain/Repositories/TransactionLogRepository.cs": {
+      "classification": "source",
+      "hash": "193beb594554429e37cf76375c2182f441e75f50607f6c51a9e1137f2b34b435"
+    },
+    "CoinBank.Domain/Repositories/UserRepository.cs": {
+      "classification": "source",
+      "hash": "5a00a923d94ae16e7a0424d055df1d34973b8e875ac42475510766d502dc6618"
+    },
+    "CoinBank.Domain/Repositories/WithdrawalRepository.cs": {
+      "classification": "source",
+      "hash": "fe40a552edf65f9c89ffd98454e365d39f53898492fdc3f5519676c4c4a7a6da"
+    },
+    "CoinBank.Manage.slnx": {
+      "classification": "other",
+      "hash": "4810d2eb411a4a3d8039ecf4f27a5b5ea809a5628092e30ddaf21f88f2c86ae7"
+    },
+    "CoinBank.Manage/CoinBank.Manage.csproj": {
+      "classification": "other",
+      "hash": "b4c5eca55c7ff8a30a673d02290950f0f99a2bb2fa5bfe72dd4b5a856619adcd"
+    },
+    "CoinBank.Manage/CoinBank.Manage.http": {
+      "classification": "other",
+      "hash": "07a060a271ee55de1cd4bb13f53864411823eb505c3bf0a4bc453d006a36a48d"
+    },
+    "CoinBank.Manage/Controllers/V1/AuthController.cs": {
+      "classification": "source",
+      "hash": "eea1c9d863f51eea8b2ad364f06fb2d4d831d853d285fbd27d9c2d318a3a85aa"
+    },
+    "CoinBank.Manage/Controllers/V1/DashboardController.cs": {
+      "classification": "source",
+      "hash": "01a1850d4e239a339cd920c3510a721de26dca11c5a284fdbd93db81dbcdf3b7"
+    },
+    "CoinBank.Manage/Controllers/V1/FinancialController.cs": {
+      "classification": "source",
+      "hash": "56b64cd2a4be923da9acf1a4e52a7341391e3848b73fce554e110990ce7667c2"
+    },
+    "CoinBank.Manage/Controllers/V1/PreSaleReportController.cs": {
+      "classification": "source",
+      "hash": "b3d2a60f9926d004f024748077c5818841ccdcd8331e20f0f4e4b27d58e2fa3b"
+    },
+    "CoinBank.Manage/Controllers/V1/SwapReportController.cs": {
+      "classification": "source",
+      "hash": "83b6886c5a3844c76e901dc7e0a8778eccd403a33ef4068c84f30b9dd763383c"
+    },
+    "CoinBank.Manage/Controllers/V1/TokenReleaseController.cs": {
+      "classification": "source",
+      "hash": "dc3dc06870aa07a6c53228e7db431dca42121b79d0bcd8413b3a67b123b3699a"
+    },
+    "CoinBank.Manage/Controllers/V1/TreasuryController.cs": {
+      "classification": "source",
+      "hash": "b502c30b6d85bdbb8b50fe6c551cfa50e1875b0e9d157858bf4efbc531a01e21"
+    },
+    "CoinBank.Manage/Controllers/V1/UserReportController.cs": {
+      "classification": "source",
+      "hash": "366850503ef1df1269cb9562d7b3a06e942db9671fb99082540180ffb0096eae"
+    },
+    "CoinBank.Manage/Program.cs": {
+      "classification": "source",
+      "hash": "9d1eafc3657f6406ee755d2aa1328a9ab6d450d78618f2860fad2103eb629d3a"
+    },
+    "CoinBank.Manage/Properties/launchSettings.json": {
+      "classification": "config",
+      "hash": "9d145f189c9240eb17079c0c781774677298a98f38bfa9f2c5a444867056fae0"
+    },
+    "CoinBank.Manage/Utilities/Configurations/ControllerAutofacConfigurationExtensions.cs": {
+      "classification": "source",
+      "hash": "abaee63d5b24537cceb9c4b66f34b9346076c73851042288b539b74990919a23"
+    },
+    "CoinBank.Manage/Utilities/Configurations/ControllerServiceCollectionExtensions.cs": {
+      "classification": "source",
+      "hash": "a5668beb5f0c4e8ad98ba989502042d3c6c7cad7db880d728cc116b658755c36"
+    },
+    "CoinBank.Manage/Utilities/Middlewares/ApplicationControllerBuilderExtensions.cs": {
+      "classification": "source",
+      "hash": "79d6ea1f833fd9a814a99967f283450b87008b987adcd2398da30163d21c2e0b"
+    },
+    "CoinBank.Manage/Utilities/Middlewares/JwtBlacklistMiddleware.cs": {
+      "classification": "source",
+      "hash": "d531a960807732d826e45eb1948cadd68c6614acc45fd8639e4f7895b479c479"
+    },
+    "CoinBank.Manage/Utilities/Middlewares/ProductionCorsMiddleware.cs": {
+      "classification": "source",
+      "hash": "213af2b6cf4b279a9f812bd41e7c25ce0eacac05eb3d9baf45de894a50296849"
+    },
+    "CoinBank.Manage/Utilities/Middlewares/RequestLoggingMiddleware.cs": {
+      "classification": "source",
+      "hash": "892aeb23d4b8e81dcb604336da8dc9c1521bc2514fe765f7a14aca6fc0fa6497"
+    },
+    "CoinBank.Manage/Utilities/Middlewares/SecurityStampMiddleware.cs": {
+      "classification": "source",
+      "hash": "245982dd4000fd20cd5f0b0de6f13d3339047dac5789790021d71fba8ee7d432"
+    },
+    "CoinBank.Manage/appsettings.Development.json": {
+      "classification": "config",
+      "hash": "f71f425abf16eec5f644e3284a8beefd12c83c83d06ab74e6d4575eda9742b5a"
+    },
+    "CoinBank.Manage/appsettings.json": {
+      "classification": "config",
+      "hash": "a0827fff4154491664667a5c674ce96b8fdd7e2bcf5c312adc858094d8f4d646"
+    },
+    "CoinBank.Services/CoinBank.Services.csproj": {
+      "classification": "other",
+      "hash": "d4dcbe05b4de6bc69a6dd48308a80d8168838b249939d9dc17c6a565c6a7b972"
+    },
+    "CoinBank.Services/_Log/DTOs/Updates/LogUpdate.cs": {
+      "classification": "source",
+      "hash": "b14a7b87cf3d4be1ab2705c61c74b668fcd09bdba93069812344e51169738bca"
+    },
+    "CoinBank.Services/_Log/DTOs/Updates/RequestLogUpdate.cs": {
+      "classification": "source",
+      "hash": "18e61c6f444e7c4a0c79344601dea76e97c8ba7009537ef729b7a9650c6bfe0b"
+    },
+    "CoinBank.Services/_Log/ILogService.cs": {
+      "classification": "source",
+      "hash": "790a9d632e9d6b771635e48e9b1480eb2964b8ab1cb919b68e7f32343e3e870a"
+    },
+    "CoinBank.Services/_Log/LogService.cs": {
+      "classification": "source",
+      "hash": "7bf12d7d4579f381057c8031b19a662c451c697a0a3c99300a5268738dd12eac"
+    },
+    "CoinBank.Services/_Report/Calculators/MaturityCalculator.cs": {
+      "classification": "source",
+      "hash": "ff904f388f85218035924e19722df44ca016235880773aa07b6e2a7e1cc7e6e2"
+    },
+    "CoinBank.Services/_Report/Calculators/ObligationCalculator.cs": {
+      "classification": "source",
+      "hash": "ba6e0c36b9d120145aaca94fda89b30c6bc9954c7bacd3c805f8dd4ac2c27b01"
+    },
+    "CoinBank.Services/_Report/Calculators/PeriodBucketer.cs": {
+      "classification": "source",
+      "hash": "5cf727ad10651c45baabf266a42d1c02cab6f4dc7879ccd083c198dd79de529b"
+    },
+    "CoinBank.Services/_Report/Calculators/UsdValuationHelper.cs": {
+      "classification": "source",
+      "hash": "8b7d575b331b4fde03bea9e300dce80b3801d3941793e876e8cb19617321050e"
+    },
+    "CoinBank.Services/_Report/DTOs/Results/DashboardReportResult.cs": {
+      "classification": "source",
+      "hash": "002eb97011d0417a46ffb08a1b1c51ca35b821be86ffdfa76994754676804151"
+    },
+    "CoinBank.Services/_Report/DTOs/Results/FinancialReportResult.cs": {
+      "classification": "source",
+      "hash": "01378a37e672c27b7f84df3ace1b2c91688e325c423956fc2b0f1323a1cfb675"
+    },
+    "CoinBank.Services/_Report/DTOs/Results/PreSaleReportResult.cs": {
+      "classification": "source",
+      "hash": "43aa3a7c7669aea1da849467583b355b0190ed77fd6c9d778712c4b9ab11fc44"
+    },
+    "CoinBank.Services/_Report/DTOs/Results/ReportExportResult.cs": {
+      "classification": "source",
+      "hash": "df7a946b4c3153c07c4a6b9d72c51608dde49b9ac040e86d793dafa0b5d93c21"
+    },
+    "CoinBank.Services/_Report/DTOs/Results/ReportPageResult.cs": {
+      "classification": "source",
+      "hash": "46ba1ec3338384828a2f80b38253c4d4e711890e8343f8e7f9b20e4d52e37b42"
+    },
+    "CoinBank.Services/_Report/DTOs/Results/SwapReportResult.cs": {
+      "classification": "source",
+      "hash": "18b0f4d24943028253495a715ac4b893d86606994e5c3a43387ca91354c17d06"
+    },
+    "CoinBank.Services/_Report/DTOs/Results/TokenReleaseReportResult.cs": {
+      "classification": "source",
+      "hash": "a746820fab1e2ce6b23ce5c701d408531b02c097a82b1fb560bc25042d5849a7"
+    },
+    "CoinBank.Services/_Report/DTOs/Results/TreasuryReportResult.cs": {
+      "classification": "source",
+      "hash": "b91c61068b6c930e4329610294890cf0dc68675cbf8855e3a11b0edcb1d200b0"
+    },
+    "CoinBank.Services/_Report/DTOs/Results/UserReportResult.cs": {
+      "classification": "source",
+      "hash": "90fd029bd0c35932712c0dff86573fb3f846aa54aadd61c22415424edb445fa8"
+    },
+    "CoinBank.Services/_Report/DTOs/Updates/FinancialReportQueryUpdate.cs": {
+      "classification": "source",
+      "hash": "127a2b4a47e6286e1328ed5014dd252bcd900cdf6efe7137637905cd6cdf5569"
+    },
+    "CoinBank.Services/_Report/DTOs/Updates/PreSaleReportQueryUpdate.cs": {
+      "classification": "source",
+      "hash": "2b0f991352a822f4755ead6a7a641c90f5098797f860814b52b40fe373e202f7"
+    },
+    "CoinBank.Services/_Report/DTOs/Updates/ReportExportUpdate.cs": {
+      "classification": "source",
+      "hash": "d29595cd2956da8d2c1bd2cf485782ce305e4c117b5c59067c36d1955e2d7346"
+    },
+    "CoinBank.Services/_Report/DTOs/Updates/ReportQueryUpdate.cs": {
+      "classification": "source",
+      "hash": "4d155aad737759bdc31bb59bd820b07597b1d6a9158d93438a1e3eda3b84070a"
+    },
+    "CoinBank.Services/_Report/DTOs/Updates/SwapReportQueryUpdate.cs": {
+      "classification": "source",
+      "hash": "f5cdd88a731e6fd3dea9b61243e784ac14072439b156e87d7560638e398fdbb7"
+    },
+    "CoinBank.Services/_Report/DTOs/Updates/TokenReleaseReportQueryUpdate.cs": {
+      "classification": "source",
+      "hash": "2382a423989abd87bf7a31a5f5bb467ca343b06b57f577e69175ad496dcc5826"
+    },
+    "CoinBank.Services/_Report/DTOs/Updates/TreasuryReportQueryUpdate.cs": {
+      "classification": "source",
+      "hash": "a87d6cf83fbacf8aa3080e93a32a49f3e17e9e76be509fba3c1ed6823f8cc135"
+    },
+    "CoinBank.Services/_Report/DTOs/Updates/UserReportQueryUpdate.cs": {
+      "classification": "source",
+      "hash": "3c29b76cb87c5e6c1ccf21d7e37047827b8e208d274077ca35796b0005a76bda"
+    },
+    "CoinBank.Services/_Report/Exports/ExportFilterText.cs": {
+      "classification": "source",
+      "hash": "1ed5ddc4f87ea081ab5a583f76522bc4c1c5769ec3ca70a1f6f4d6d16c0f4257"
+    },
+    "CoinBank.Services/_Report/Exports/ExportMetadata.cs": {
+      "classification": "source",
+      "hash": "8e409b3ec6131b64b4d53acb7fb9f32c57695523e397e60bea4c82b39a8cc717"
+    },
+    "CoinBank.Services/_Report/Exports/Fonts/Roboto-Regular.ttf": {
+      "classification": "asset",
+      "hash": "2013a05747d1a24735de84bfefa87a95fe49a0ea814b59c55e84cec7077f5af4"
+    },
+    "CoinBank.Services/_Report/Exports/IReportCsvRenderer.cs": {
+      "classification": "source",
+      "hash": "39ac4aa0621707ab636394d4380256fe6451944ee9c834d9369fc57dd94ea9dd"
+    },
+    "CoinBank.Services/_Report/Exports/IReportExcelRenderer.cs": {
+      "classification": "source",
+      "hash": "531b6da627c5d0942d8834bf670718a8e5e93e832dc5f01e3648fb3a05822001"
+    },
+    "CoinBank.Services/_Report/Exports/IReportPdfRenderer.cs": {
+      "classification": "source",
+      "hash": "d961ce700df7a1c04fbd49e3873af316fd1709756da2d7b2ad6dfca2954c9ff1"
+    },
+    "CoinBank.Services/_Report/Exports/ReportCsvRenderer.cs": {
+      "classification": "source",
+      "hash": "4eba49c97ab1660b81438f9dce119a21ec59b3e423fda004138300525fd53560"
+    },
+    "CoinBank.Services/_Report/Exports/ReportExcelRenderer.cs": {
+      "classification": "source",
+      "hash": "967c764f2b5bea8101bc1faf4a2d45344d99fb5b18e8e6b898fcb849d8b98ccc"
+    },
+    "CoinBank.Services/_Report/Exports/ReportPdfFontResolver.cs": {
+      "classification": "source",
+      "hash": "33ec6fee10148068f7ac32d1a73698077526a562e4b27862578416af896f29ad"
+    },
+    "CoinBank.Services/_Report/Exports/ReportPdfRenderer.cs": {
+      "classification": "source",
+      "hash": "336e9a6a929af8812c995669071d6c5c076a4c762313dbc791197e4859697244"
+    },
+    "CoinBank.Services/_Report/Exports/ReportTable.cs": {
+      "classification": "source",
+      "hash": "28eb9a899e1d0ab033e7dc5c40173dcc84ace5a5cacc48adc15206a0dead299f"
+    },
+    "CoinBank.Services/_Report/IDashboardReportService.cs": {
+      "classification": "source",
+      "hash": "f6dd79c010d54e3de35533cfebb8996289bc12cbeacf76b485ee70b2c88fbb5d"
+    },
+    "CoinBank.Services/_Report/IFinancialReportService.cs": {
+      "classification": "source",
+      "hash": "db5060197c28f4b2fcbe3d76f5ca5de97bf9b3a985dfdf3ea919953e793ed5c4"
+    },
+    "CoinBank.Services/_Report/IPreSaleReportService.cs": {
+      "classification": "source",
+      "hash": "de5f63c141b15fb6f793d0302413f48f6e94e25fef4fef06a439b7d6fab4f87f"
+    },
+    "CoinBank.Services/_Report/ISwapReportService.cs": {
+      "classification": "source",
+      "hash": "b98e27b05527e33be8d13162f6d55d40760968ba265935eb17f048f73ca79e68"
+    },
+    "CoinBank.Services/_Report/ITokenReleaseReportService.cs": {
+      "classification": "source",
+      "hash": "be59dd02116f923fb3c90679c394f857c51b96aade8f40b13065066eb87849ce"
+    },
+    "CoinBank.Services/_Report/ITreasuryReportService.cs": {
+      "classification": "source",
+      "hash": "1b93e673283acd96b8d13e4dee5eb7b9e86fef1ee132fbd6007ef9c719e308c2"
+    },
+    "CoinBank.Services/_Report/IUserReportService.cs": {
+      "classification": "source",
+      "hash": "e1bc6e736c87c4c72b0beea96a0a0ccbaf5c5ee05d72e58ce0e3ee120aa43ae8"
+    },
+    "CoinBank.Services/_Report/ReportLimits.cs": {
+      "classification": "source",
+      "hash": "d8c4edd18dc1c84c775d6abc48ebcafbf754f9229e47f31cc1684d01a2616d9f"
+    },
+    "CoinBank.Services/_User/DTOs/Storages/JwtBlacklistStorage.cs": {
+      "classification": "source",
+      "hash": "83f3b296c9eb8a5a38292c0b7774b783febd8c58deb73dfa55d1bec5ccafd483"
+    },
+    "CoinBank.Services/_User/DTOs/Updates/AdminLoginUpdate.cs": {
+      "classification": "source",
+      "hash": "594e9f9224afac35b822a82db8c497e8f7b57de4ecd0a97190524b0f2472b76a"
+    },
+    "CoinBank.Services/_User/IUserService.cs": {
+      "classification": "source",
+      "hash": "8523edac5caf26b64d5bcb240597023e1ffd9b4d968a5aed063cbb33f3501b5d"
+    },
+    "CoinBank.Services/_User/UserService.cs": {
+      "classification": "source",
+      "hash": "4ad159fb5b2d824da5b3efa6168db627e16ede21b8bd79257954b9b775d43860"
+    },
+    "CoinBank.Utilities/Api/ApiBaseController.cs": {
+      "classification": "source",
+      "hash": "1759182cef6ab2dc7283e30072f0ea4e16f4a3a216e8fa2fa46adce6557a8c98"
+    },
+    "CoinBank.Utilities/Attributes/CollectionInputValidationAttribute.cs": {
+      "classification": "source",
+      "hash": "8d63678dc4fbc1de9fa618979916585da0c663a1346158176a7d616885598314"
+    },
+    "CoinBank.Utilities/Attributes/CustomRateLimitAttribute.cs": {
+      "classification": "source",
+      "hash": "03659db2b5aec06e218977393652df2b591c3082f5ec8bef275314039c240e52"
+    },
+    "CoinBank.Utilities/Attributes/DateInputValidationAttribute.cs": {
+      "classification": "source",
+      "hash": "432c66ca237889b37eb21313774466f4e7c47e2fb39b24ebe27af8a44f5ae87c"
+    },
+    "CoinBank.Utilities/Attributes/EmailInputValidationAttribute.cs": {
+      "classification": "source",
+      "hash": "83a0ac684cebb7d6296c0a5c32212861484462c967b433410717536c726028e5"
+    },
+    "CoinBank.Utilities/Attributes/EnumInputValidationAttribute.cs": {
+      "classification": "source",
+      "hash": "4aff50f2b835d009f1ad7161299ebef55ba2cf0ad723079cc276e2c72a7ac2c4"
+    },
+    "CoinBank.Utilities/Attributes/GuidInputValidationAttribute.cs": {
+      "classification": "source",
+      "hash": "5f81f756496105241bb5032ce0649ca85328eb63468d17b7fef66388ab3c3630"
+    },
+    "CoinBank.Utilities/Attributes/MonjoCollectionNameAttribute.cs": {
+      "classification": "source",
+      "hash": "c35bb95892e115f528ad7994cc3bc748f617f259f36a2231942d3b2f3fa04fa6"
+    },
+    "CoinBank.Utilities/Attributes/NumericInputValidationAttribute.cs": {
+      "classification": "source",
+      "hash": "35d35f5a7d5696eb336213c6a7ced3a3124b78a4ad3e34e277cbca0d3760fca1"
+    },
+    "CoinBank.Utilities/Attributes/ObjectInputValidationAttribute.cs": {
+      "classification": "source",
+      "hash": "0ab6e12cf070d62b2b6e1dc5768dc7f73d7ed7f22d321929705ff109c70d831f"
+    },
+    "CoinBank.Utilities/Attributes/RequiredInputAttribute.cs": {
+      "classification": "source",
+      "hash": "837408d444ebc1c5e6136ccbf46760da8ea10828864e1260d6b54577e1e03b36"
+    },
+    "CoinBank.Utilities/Attributes/SanitizeAttribute.cs": {
+      "classification": "source",
+      "hash": "fe769b565d558f663db362dbe93a435caa3f4054af9d034d6e3bbd351669cb01"
+    },
+    "CoinBank.Utilities/Attributes/SecurityAttribute.cs": {
+      "classification": "source",
+      "hash": "7d219cffd1f250b25615dc5e17d1933771984bf09de9f02a73493331ba3c7842"
+    },
+    "CoinBank.Utilities/Attributes/StringInputValidationAttribute.cs": {
+      "classification": "source",
+      "hash": "ce381232041c37d867101dfc24501cb70a21401a2e56acf0e333b6f1c0c94273"
+    },
+    "CoinBank.Utilities/CoinBank.Utilities.csproj": {
+      "classification": "other",
+      "hash": "54bf72e0e7193c1e0d4de73fb059d60fda5c0128b8bc926e781d74d48919e80c"
+    },
+    "CoinBank.Utilities/Configuration/ApplicationBuilderExtensions.cs": {
+      "classification": "source",
+      "hash": "2c9dd66111ace42733c5b4b56566447c6f00c46c6fd59df88c61cd8d89d438b1"
+    },
+    "CoinBank.Utilities/Configuration/AutofacConfigurationExtensions.cs": {
+      "classification": "source",
+      "hash": "3994c430154716d46540bf7c60f22ef504be7bb758a0a2daa9d6d36f04b6fb91"
+    },
+    "CoinBank.Utilities/Configuration/ServiceCollectionExtensions.cs": {
+      "classification": "source",
+      "hash": "71aaee78ecc5daa7fdb78458caea16e1389eff3a09fe53615e937c4b1f749f49"
+    },
+    "CoinBank.Utilities/Configuration/SwaggerConfigurationExtensions.cs": {
+      "classification": "source",
+      "hash": "2dcf45e8e8adb10f2f2fe9f54bb1e792b951a370f7aa649c4f47152338054b08"
+    },
+    "CoinBank.Utilities/Constants/BaseSettings.cs": {
+      "classification": "source",
+      "hash": "660ed30b9d246a015e305b4f071639a417872bfd32d8a77d8fbb643b2034a5fc"
+    },
+    "CoinBank.Utilities/Constants/RegisterMode.cs": {
+      "classification": "source",
+      "hash": "a52344a2475908e4acd3d1ed15492dcf50ef170acdf703dc98cafaa6e4d5d61a"
+    },
+    "CoinBank.Utilities/DTOs/Pagination.cs": {
+      "classification": "source",
+      "hash": "fdc9fa2570af599c7c1eb43e440f1836bda81484ebbc33a633ba757c02464585"
+    },
+    "CoinBank.Utilities/Enums/ApiResultStatusCode.cs": {
+      "classification": "source",
+      "hash": "942a9bdfae9b4b5ffc7dfce91df11d1598c0063425e26cef4917683ed69ed332"
+    },
+    "CoinBank.Utilities/Enums/Claims.cs": {
+      "classification": "source",
+      "hash": "b98f9d459baf65096b62ec13e60e666989231f7fa45bba8e81b6d7693a41109a"
+    },
+    "CoinBank.Utilities/Exceptions/AuthorizationException.cs": {
+      "classification": "source",
+      "hash": "8cfdbf8cf93cd32271b78cfdb3a66cf679f07063557ba6db544db44d38924b64"
+    },
+    "CoinBank.Utilities/Exceptions/Common/BadRequestException.cs": {
+      "classification": "source",
+      "hash": "b74330811b398b10f4bf1dde0df145ed185c2d7c9f6e1fc672cfceb63222ab5b"
+    },
+    "CoinBank.Utilities/Exceptions/Common/BaseException.cs": {
+      "classification": "source",
+      "hash": "6ad327f58c916682f7840367dbb663eaf320f31de7c5bad6b9d10e5392ceb8f4"
+    },
+    "CoinBank.Utilities/Exceptions/Common/CommonExceptionMessages.resx": {
+      "classification": "other",
+      "hash": "d15adcb8573e15f009888c7f3bcc392a6989b686711d633dba745ed1b54f7b24"
+    },
+    "CoinBank.Utilities/Exceptions/Common/LogicException.cs": {
+      "classification": "source",
+      "hash": "4980079625e0ab8453b417c039931285daab5d6034bb25c57887920f21530666"
+    },
+    "CoinBank.Utilities/Exceptions/Common/NotFoundException.cs": {
+      "classification": "source",
+      "hash": "0b9037b05871cd16dda22fc26ce67896b6084d21b9e26e2b805588b9dfa15acd"
+    },
+    "CoinBank.Utilities/Exceptions/CommonExceptionMessages.Designer.cs": {
+      "classification": "source",
+      "hash": "6f63a45dc08894c69b680631f861c27da0f987fac9b0bdf8fcb180c6d4a531af"
+    },
+    "CoinBank.Utilities/Exceptions/DuplicateException.cs": {
+      "classification": "source",
+      "hash": "2285f3264cc9733e57cf37051a1e73570ed21a66d52d2e9381b881d1e5b69e6b"
+    },
+    "CoinBank.Utilities/Exceptions/ExceptionMessages.Designer.cs": {
+      "classification": "source",
+      "hash": "ca73493adc5ce2e804126fb1065892d4f574cc861a0c10dc061bec4efb214c11"
+    },
+    "CoinBank.Utilities/Exceptions/ExceptionMessages.resx": {
+      "classification": "other",
+      "hash": "a71cb3a00146d3695eac80ef4733b8efd82b53ae7e595699a16f7398c01112bb"
+    },
+    "CoinBank.Utilities/Exceptions/InsufficientBalanceException.cs": {
+      "classification": "source",
+      "hash": "249a42429cc8b54115e50575b27178205a689d1f8c7a3f31de814f4328dd5793"
+    },
+    "CoinBank.Utilities/Exceptions/InvalidCaptchaException.cs": {
+      "classification": "source",
+      "hash": "34ba32033ce0163d5acc870d0c912b0fe891b5c975c2866cbd098091b5e0d944"
+    },
+    "CoinBank.Utilities/Exceptions/NonceNotFoundException.cs": {
+      "classification": "source",
+      "hash": "d54957a2adce0ac357726624cb94eb73359c2f1ef74571dcea425e5c3fc94253"
+    },
+    "CoinBank.Utilities/Exceptions/OAuthException.cs": {
+      "classification": "source",
+      "hash": "51b6328698b56e675da6c4c6ff558ed1b24685cb71fd78b1b7de2d75a2f8255c"
+    },
+    "CoinBank.Utilities/Exceptions/RoleNotFoundException.cs": {
+      "classification": "source",
+      "hash": "a3cfac3306c12a8a8c3e7553b36eeefe0438fbb73f4f0620f0456a83b620a70a"
+    },
+    "CoinBank.Utilities/Exceptions/TooManyRequestsException.cs": {
+      "classification": "source",
+      "hash": "4e32226c9a8f28d7a6757f4523a0bfae509852a68cae5cc078ed5aa08dbb3766"
+    },
+    "CoinBank.Utilities/Extension/DateTimeExtensions.cs": {
+      "classification": "source",
+      "hash": "0b4e8fbb5d9a19d6e735b41f94906f4f1da16313454c80512569a3730f75e718"
+    },
+    "CoinBank.Utilities/Extension/DecimalExtensions.cs": {
+      "classification": "source",
+      "hash": "8c17293a552a8055da33b9985fb6388b121e9914af293bc474c7577433d917de"
+    },
+    "CoinBank.Utilities/Extension/HttpClientExtensions.cs": {
+      "classification": "source",
+      "hash": "1090643dc867d2e35fcba3eac9cf26d020a9f72ab928f187113d8b6ff2dc425b"
+    },
+    "CoinBank.Utilities/Extension/HttpContextExtensions.cs": {
+      "classification": "source",
+      "hash": "ea7d3bd9a5e27838f5b688717a257e1a03e2f1f756880a78d1549690d58264c1"
+    },
+    "CoinBank.Utilities/Extension/JwtSecurityTokenExtensions.cs": {
+      "classification": "source",
+      "hash": "867915e259848596addf6f679dfd15af338be3e6f33ea00852e14df568e73295"
+    },
+    "CoinBank.Utilities/Filters/ApiResultFilterAttribute.cs": {
+      "classification": "source",
+      "hash": "c5c13798dee3243b7f8bcef6b93c77e5281962f7f060f9006ac6d4f65d291a38"
+    },
+    "CoinBank.Utilities/Filters/AuthorizeAttribute.cs": {
+      "classification": "source",
+      "hash": "349cf7a471bcdff4bac1ba0068fc1a28def5806a6e403e27e6dc76420abd533e"
+    },
+    "CoinBank.Utilities/Filters/FileSizeLimitAttribute.cs": {
+      "classification": "source",
+      "hash": "2197a092da60ea0c34a5927b48fe94ca98af3259e32be908c0fb4aeb9a9a8f9d"
+    },
+    "CoinBank.Utilities/Filters/GzipCompressionAttribute.cs": {
+      "classification": "source",
+      "hash": "46d56623d00b1942b558fa0e82b205268ce85926c516c2568d0acc8c5efed3ba"
+    },
+    "CoinBank.Utilities/Middlewares/CustomExceptionHandlerMiddleware.cs": {
+      "classification": "source",
+      "hash": "92a7eaa887c6631b79179b48925e27bf4176afa04fe6898cd339aff460d9cb7b"
+    },
+    "CoinBank.Utilities/Middlewares/CustomGlobalRateLimitingMiddleware.cs": {
+      "classification": "source",
+      "hash": "7bf4d0a8b4a90633b66d10bee844f857a3d25d1e9c72f9eea33270f969ec4dbc"
+    },
+    "CoinBank.Utilities/Middlewares/CustomRateLimitingMiddleware.cs": {
+      "classification": "source",
+      "hash": "67eac52daceeb363aee0d795b075898d99555d818b4a6c36eeef4971003a79a1"
+    },
+    "CoinBank.Utilities/Middlewares/FirewallMiddleware.cs": {
+      "classification": "source",
+      "hash": "8fc61795860b2ed301838426114b4fa661e66fb81b4f9a433b5c975ecdca8497"
+    },
+    "CoinBank.Utilities/Middlewares/JwtMiddleware.cs": {
+      "classification": "source",
+      "hash": "5e0aff723cb403e421b49f269061dc12b467c4def9f61b37109b01cdab90421b"
+    },
+    "CoinBank.Utilities/Middlewares/SignatureMiddleware.cs": {
+      "classification": "source",
+      "hash": "561e875098a33297ac6d31c73220a67717d5d43afb1dbadc48e531207a288964"
+    },
+    "CoinBank.Utilities/Models/Results/ApiResult.cs": {
+      "classification": "source",
+      "hash": "92dd07195315d703fb42f3699e1a5bc94a5f2402049b013536becf426fbe8392"
+    },
+    "CoinBank.Utilities/Models/Results/GetCaptchaResult.cs": {
+      "classification": "source",
+      "hash": "2414d25aea516c1bb7ba13ce4a3134b7a0c1e3a06fe030c2d51614aaeea1c04b"
+    },
+    "CoinBank.Utilities/Models/Settings/ApplicationPoolSettings.cs": {
+      "classification": "source",
+      "hash": "4fd3292785062fe615da29e55b249c9420ccea161577523a5351c22bb9d5164c"
+    },
+    "CoinBank.Utilities/Models/Storages/ApplicationPoolStorage.cs": {
+      "classification": "source",
+      "hash": "f6ae91cba51f33104dd7388fc862dec7f414e53ae1212d570e2bf163d54d62a1"
+    },
+    "CoinBank.Utilities/MongoDatabase/Builders/MonjoIndexBuilder.cs": {
+      "classification": "source",
+      "hash": "4790011d8da076a6706ff8a2a4541714b1d2ceda4d7073e2b2fd7a3be380e2f3"
+    },
+    "CoinBank.Utilities/MongoDatabase/Contracts/IMonjoConnection.cs": {
+      "classification": "source",
+      "hash": "a6e14665ff8c05aad9c456c3b7efc9a331db688266e7f7ab745cc14a92774a39"
+    },
+    "CoinBank.Utilities/MongoDatabase/Contracts/IMonjoIndexBuilder.cs": {
+      "classification": "source",
+      "hash": "bdd3ad6f6eb7b882302741bba026464c0af9366adb145c54031a4ee41234b4ef"
+    },
+    "CoinBank.Utilities/MongoDatabase/Contracts/IMonjoRepository.cs": {
+      "classification": "source",
+      "hash": "6c9970863588648af1e639a18d07658102dc9804af7fad215c620b0a5d75acbd"
+    },
+    "CoinBank.Utilities/MongoDatabase/Contracts/IMonjoSettings.cs": {
+      "classification": "source",
+      "hash": "b2f2e3bae6bbe57dc43381de9d46c39918346302df6ad2ad8c18d760f6fa9937"
+    },
+    "CoinBank.Utilities/MongoDatabase/Documents/BaseDocument.cs": {
+      "classification": "source",
+      "hash": "746e3c226a4889f3607667dd1d55664843062be049201c6eecab19d7c408aa4c"
+    },
+    "CoinBank.Utilities/MongoDatabase/Documents/BaseDocumentUtilities.cs": {
+      "classification": "source",
+      "hash": "d5749deae79aef3a4648cb9ee344e57da6d850eb870ef8f09a9da984d7184d82"
+    },
+    "CoinBank.Utilities/MongoDatabase/Extensions/ExpressionExtensions.cs": {
+      "classification": "source",
+      "hash": "5b6493b5d1f583139f533225f4a723a83d59efc394a40e6a7d78bdf3610fed00"
+    },
+    "CoinBank.Utilities/MongoDatabase/Extensions/IFindFluetnExtentions.cs": {
+      "classification": "source",
+      "hash": "b289e7601f160f680f314e54ea73dd8e3df7a64bc7662c8fe2d9110d9b8ae67a"
+    },
+    "CoinBank.Utilities/MongoDatabase/Extensions/IMongoQueryableExtensions.cs": {
+      "classification": "source",
+      "hash": "74053c5832f35ec3a7db174c7b5c97dfe5e60579df2e57d8358a0c359da0e205"
+    },
+    "CoinBank.Utilities/MongoDatabase/Extensions/IQueryableExtensions.cs": {
+      "classification": "source",
+      "hash": "ecd3ac177ee1495cfaa175ccc640a3016dd5d8e98b420646702a162fdad9bb92"
+    },
+    "CoinBank.Utilities/MongoDatabase/Extensions/MongoCollectionExtensions.cs": {
+      "classification": "source",
+      "hash": "c9ff3e6bcb5603c2406391cd5d57c8067f7845875730b57a2abdb902c75d85b4"
+    },
+    "CoinBank.Utilities/MongoDatabase/Extensions/MongoDatabaseExtensions.cs": {
+      "classification": "source",
+      "hash": "4fcbaefb69d9dda4d78ad02ed5c4b550ba3667097d4aa35878201708edb88d15"
+    },
+    "CoinBank.Utilities/MongoDatabase/Extensions/MonjoConditionExtensions.cs": {
+      "classification": "source",
+      "hash": "c49abcc192ab925d294c5dcc8da01c701bd58bca902f289f9f9d191f3d3ff9e7"
+    },
+    "CoinBank.Utilities/MongoDatabase/Extensions/MonjoOrderExtensions.cs": {
+      "classification": "source",
+      "hash": "cbfb6b4b198634654094315eafbfd0eebcebeb9c536ce17bbf6463fdfc27b3b5"
+    },
+    "CoinBank.Utilities/MongoDatabase/Extensions/MonjoPageExtensions.cs": {
+      "classification": "source",
+      "hash": "fa2da13a169c9edec967526bcb9bbd1dffc67ef3ed296a58f13c74de52d92347"
+    },
+    "CoinBank.Utilities/MongoDatabase/Filter/MonjoCondition.cs": {
+      "classification": "source",
+      "hash": "373e5856707ce71c8eff550faaa2725a242545e866a7efe2f5702bc9cc35e9b9"
+    },
+    "CoinBank.Utilities/MongoDatabase/Filter/MonjoFilteredResult.cs": {
+      "classification": "source",
+      "hash": "a98299ac782bd0a858bb9a1b68e373e4509e90cb91afe74206d13f54068da0e1"
+    },
+    "CoinBank.Utilities/MongoDatabase/Filter/MonjoOrder.cs": {
+      "classification": "source",
+      "hash": "986b4759a67d9b5811e89ee96d0598a9810aa70729082fed856bc0de03c8873b"
+    },
+    "CoinBank.Utilities/MongoDatabase/Filter/MonjoPage.cs": {
+      "classification": "source",
+      "hash": "8c566e30caf54f3b8c370d0c6538db804e3c38bf11f90ef6b5a46d8ca9c09609"
+    },
+    "CoinBank.Utilities/MongoDatabase/Filter/MonjoQuery.cs": {
+      "classification": "source",
+      "hash": "ececae909bf88eda14f1b44956d05ed0c860f7e2dacb7aa0539212af020d601a"
+    },
+    "CoinBank.Utilities/MongoDatabase/MongoLinqPaginationExtensions.cs": {
+      "classification": "source",
+      "hash": "895bcb03b0136daf84f354295b3face7401a1b112ef9b0d1d3556d8d457f12fe"
+    },
+    "CoinBank.Utilities/MongoDatabase/MonjoConnection.cs": {
+      "classification": "source",
+      "hash": "2622b85b17c9084a3d14435d7fba9370021df9ec74e57846743d44849c90c8e0"
+    },
+    "CoinBank.Utilities/MongoDatabase/MonjoRepository.cs": {
+      "classification": "source",
+      "hash": "786207f5c7e6b3945295eec2a6140f73cd68c4f63e08ad8084e99d92c6c8942c"
+    },
+    "CoinBank.Utilities/MongoDatabase/MonjoSettings.cs": {
+      "classification": "source",
+      "hash": "21dd42e2139ed08618694a198b3ce70046dc5d9494256ccb3a0b36fdd1f060e3"
+    },
+    "CoinBank.Utilities/Permissions/PermissionUtilities.cs": {
+      "classification": "source",
+      "hash": "e5421b951cc2c82a4d75e8d561d4fa6ce95d9fad59d2ccc96eca56c20451940a"
+    },
+    "CoinBank.Utilities/Permissions/Permissions.cs": {
+      "classification": "source",
+      "hash": "ae5a97fac7e9c802f6f081a384bf5eaa54753d843870f92451405d8b19088671"
+    },
+    "CoinBank.Utilities/Services/Contracts/IJwtService.cs": {
+      "classification": "source",
+      "hash": "6c497ab47f3892685136deeb7ac858a3ff85497085a1c2e3ea1b6bb8b553d197"
+    },
+    "CoinBank.Utilities/Services/Contracts/INonceService.cs": {
+      "classification": "source",
+      "hash": "c6087281a86cbdf40ad9653256b92d0380544a350502312e8b1ddca825933cc9"
+    },
+    "CoinBank.Utilities/Services/Contracts/IPasswordService.cs": {
+      "classification": "source",
+      "hash": "46d2a72602994663face17b0eb2fa3923588827ce3f4e84ee14ae9f97d899ad3"
+    },
+    "CoinBank.Utilities/Services/Contracts/IRandomService.cs": {
+      "classification": "source",
+      "hash": "f0dcda401b37f7f2d428d8dbb7d5c51c824e5520ae32a2762d589087686b00d5"
+    },
+    "CoinBank.Utilities/Services/Contracts/ISecurityService.cs": {
+      "classification": "source",
+      "hash": "d0332b0a05bf1728dcc2e2d3a2699fb312d45b5099833f0e867f13b316db0448"
+    },
+    "CoinBank.Utilities/Services/Contracts/ISignatureService.cs": {
+      "classification": "source",
+      "hash": "06a42c34b7c78d0364fa1809663712df9802513c743515bf9ced9b8afb26df96"
+    },
+    "CoinBank.Utilities/Services/Contracts/ITextService.cs": {
+      "classification": "source",
+      "hash": "79c0b8dc82da7bb885ed72e330962fc26a5a5b22d9d27ec5ec43f573510771c5"
+    },
+    "CoinBank.Utilities/Services/JwtService.cs": {
+      "classification": "source",
+      "hash": "7dcf001dcf1c9d2211edc356a7deefec6267ad9d586b303d7c949c7af5461a12"
+    },
+    "CoinBank.Utilities/Services/NonceService.cs": {
+      "classification": "source",
+      "hash": "2df42538030b86a9090287495bb2d51b617649f50c7ee9fc4ef1e3da89daa4e1"
+    },
+    "CoinBank.Utilities/Services/OldSchedulerBase.cs": {
+      "classification": "source",
+      "hash": "6896a7171fc85b8542129a48512649f356de27413d4b1c3db397b5ed661f2133"
+    },
+    "CoinBank.Utilities/Services/PasswordService.cs": {
+      "classification": "source",
+      "hash": "2e2dca81505f95801f2da287692f06367e0c2a00065e18eb88c9e4318d413fd1"
+    },
+    "CoinBank.Utilities/Services/RandomService.cs": {
+      "classification": "source",
+      "hash": "0e99c82b5f2673245b196796faf1ff8768467e3f3fefd7628ee4aca31a299a8b"
+    },
+    "CoinBank.Utilities/Services/SchedulerBase.cs": {
+      "classification": "source",
+      "hash": "d741dc33cb6d370925275a6cf11df47314cc3defa641a702d54a8f782e66a79e"
+    },
+    "CoinBank.Utilities/Services/SignatureService.cs": {
+      "classification": "source",
+      "hash": "ff451974c588e980ff7a93cd804d6ae194fafbcd8bfcdea397944e00a6b5eda9"
+    },
+    "CoinBank.Utilities/Services/TextService.cs": {
+      "classification": "source",
+      "hash": "d8742e84a08c816f12fde400b1bf38061b4d792fa40537261cdd0c9091f541da"
+    },
+    "CoinBank.Utilities/Swagger/AddAdditionalResponseExampleFilter.cs": {
+      "classification": "source",
+      "hash": "69e5ff5b16ce3db7a16874397bc088a7cad041bd5bf03b7f4a0a11bbea869c1b"
+    },
+    "CoinBank.Utilities/Swagger/ApplySecurityRequirementsToActionsFilter.cs": {
+      "classification": "source",
+      "hash": "97b3871df8f707b6d4d0bef02003882910ec152c4dc8623eee7342bff8413c7e"
+    },
+    "CoinBank.Utilities/Swagger/RemoveVersionParameters.cs": {
+      "classification": "source",
+      "hash": "70d9fd83d7594d42a0ee15b57412095773047548e83b04ef135711ebcdcef548"
+    },
+    "CoinBank.Utilities/Swagger/SetVersionInPaths.cs": {
+      "classification": "source",
+      "hash": "4179955057e6472872d9b1c1afd0d3e24bb4006929b2b61c07a298c458180efc"
+    },
+    "CoinBank.Utilities/Utilities/ArgumentExtensions.cs": {
+      "classification": "source",
+      "hash": "18249474c1eac990bf3430f7ae9cf4946ca1b0d816ee6a9367a2aa34816d9e53"
+    },
+    "CoinBank.Utilities/Utilities/Assert.cs": {
+      "classification": "source",
+      "hash": "1c355008622c82169c205e7a389b09e7d506b77805835fdf781c8d187dfe1ee2"
+    },
+    "CoinBank.Utilities/Utilities/DictionaryExtension.cs": {
+      "classification": "source",
+      "hash": "ec008281e4d0fb478f6307acd49d02f396e6d508733b332e1b3e17ed279bdb63"
+    },
+    "CoinBank.Utilities/Utilities/EnumExcentions.cs": {
+      "classification": "source",
+      "hash": "241f66538c0c31f2ad6782d11898b4a8a7d42e4e3e89677d1f247bda973b09c6"
+    },
+    "CoinBank.Utilities/Utilities/GenericTypeExtension.cs": {
+      "classification": "source",
+      "hash": "315f226ab85a7dec43e243b06d44634082ea23f881305598bd53aa27dd8ee0fa"
+    },
+    "CoinBank.Utilities/Utilities/HtmlSanitizer.cs": {
+      "classification": "source",
+      "hash": "7fb3270ef58e08d53a6721c6103b83a3e6e947ca35699e69481a0efdb86a2548"
+    },
+    "CoinBank.Utilities/Utilities/PaginationHelper.cs": {
+      "classification": "source",
+      "hash": "ad3314c09b540261fb15af8092c380b9762fd2c5452ab854e4da992d586b24e5"
+    },
+    "CoinBank.Utilities/Utilities/ReflectionExtensions.cs": {
+      "classification": "source",
+      "hash": "6db08fe037a98e2cdc978359ac1e65385d10bac69883845f53f4000cbb594f7d"
+    },
+    "CoinBank.Utilities/Utilities/SecurityHelper.cs": {
+      "classification": "source",
+      "hash": "8e4f1f700fc867c6c26a59560cd8fc820fbe9df645b4ab09ab6b6a46e70d5006"
+    },
+    "CoinBank.Utilities/Utilities/StringExtensions.cs": {
+      "classification": "source",
+      "hash": "b404c8c2a471a0136a201595d40d7e1334e06caf91ce6bda03361c6b0ad65f9e"
+    },
+    "CoinBank.Utilities/Utilities/TimeExtension.cs": {
+      "classification": "source",
+      "hash": "5ecced842200b8ffa8ae7e7df6bcd0d994e24141821ff0a7a06095de6140c50a"
+    },
+    "CoinBank.Utilities/Utilities/TimeHelper.cs": {
+      "classification": "source",
+      "hash": "fa0350d0a5bed584e5692651b84b1de94c9d7c74e8e3171f9ea318a5d3e685ec"
+    },
+    "Directory.Build.props": {
+      "classification": "other",
+      "hash": "a582e540f206381c763bbe2bbe25fd7c9acceb8f4d70138069887b7dab4c2469"
+    },
+    "Directory.Packages.props": {
+      "classification": "other",
+      "hash": "7e99a14d155f644e26107092e1fa8099ebc1ea99241d8b3819da1aae9db2a722"
+    },
+    "Dockerfile": {
+      "classification": "config",
+      "hash": "6af2b3a9ca9815602539cdf8698213a9113d07564d707d331d7f71e7ac176bc1"
+    },
+    "README.md": {
+      "classification": "doc",
+      "hash": "4badc09fc393c449ab886f1c651665eaec9503afe25bfc0d81c1132df7d6e89f"
+    },
+    "deploy.sh": {
+      "classification": "other",
+      "hash": "028f007854d9bd253f42c3996195cf1480a33b0a43f6a9f25aed727a48585c17"
+    },
+    "docker-compose.yml": {
+      "classification": "config",
+      "hash": "62b266bac6e7bebe3fb4a09271c4ed22a78362b2c6e5846f39aa56c73d303bb0"
+    },
+    "docs/ARCHITECTURE.md": {
+      "classification": "doc",
+      "hash": "f39e7cfa91aa0c88bf7a757650e1c369da26afd0058fdf383538e7f21a406aab"
+    },
+    "docs/CI.md": {
+      "classification": "doc",
+      "hash": "100ea19ecf94e5ac100e65ac737d728140691d558a95934e2d61643f39ed60de"
+    },
+    "docs/REVIEW_GUIDE.md": {
+      "classification": "doc",
+      "hash": "d8e54dfbc2b81a2d392c352a4c2f1ee231b75a5fc537ea44cb424e82888bcd2c"
+    },
+    "docs/REVIEW_INDEX.md": {
+      "classification": "doc",
+      "hash": "b61577645046b2f85943936351963bfcf50e52a9785db96f69c1dc820392305c"
+    },
+    "docs/SECURITY.md": {
+      "classification": "doc",
+      "hash": "df456f9e0c77d4c8cc73b3e10db64aec01dc9feb25368f8fde838465c19f9e81"
+    },
+    "docs/review/architecture.md": {
+      "classification": "doc",
+      "hash": "1e516e1bd0221f5dda11d46f2a2ab4639c5a41ac0e5ba08fa7ab92d2a2ee48c4"
+    },
+    "docs/review/backend.md": {
+      "classification": "doc",
+      "hash": "ef7aa2c3e89febd879fb04f8fd1737e4045a7845f67e577d5c90987245e2c1ee"
+    },
+    "docs/review/conventions.md": {
+      "classification": "doc",
+      "hash": "dda8f49d5e9f410cea8bc88c46dc4b70b4023372e94e8ca93848ba6dca570349"
+    },
+    "docs/review/domain.md": {
+      "classification": "doc",
+      "hash": "dca6856db88cab6d62e0522ca7fb5b3352e449c78acc4e0785623f2a84e80c86"
+    },
+    "docs/review/risk-map.md": {
+      "classification": "doc",
+      "hash": "5440c27655a3da621457c7c87f820e84c9e19d78ebdb5ac3274d7fbd6069b94f"
+    },
+    "docs/review/security.md": {
+      "classification": "doc",
+      "hash": "65bbb6bf352a430a253a17f7897ea86db3ef2b9a98792351e5e104f01d4c094d"
+    },
+    "docs/review/testing.md": {
+      "classification": "doc",
+      "hash": "4786f9bf5228841639471f1f83467935ee81f422066f7db5372f8c4f37ed3dc3"
+    },
+    "docs/review/workflows.md": {
+      "classification": "doc",
+      "hash": "66c5cd20cb134807a0a9e1d5b74b7be0b7e02a29f3b1aab257f5c665accd08ca"
+    }
+  },
+  "generatedDocs": {
+    "docs/REVIEW_GUIDE.md": "ce453b4913a46b6395c0cc7e9e07189f795282c9e505880b27146eae48decc79",
+    "docs/REVIEW_INDEX.md": "4aad06e073bfec1325ae53f5e4ccf9231ea13c62afb6f7326045670b26a084bf",
+    "docs/review/architecture.md": "aa3dcf5f8c39f560aeb3a092dd4ee0d620f6e18e870a12dfa82a88c8c319eb3f",
+    "docs/review/backend.md": "eb84c6ef0f57b6cd54e1ca17ce69f2b8c2ca3d81e6b7475bee909f5dde41c1c8",
+    "docs/review/conventions.md": "01a70a40335653a20853a2a3dcc9f846560140d977f3afd2ab1d13969725f473",
+    "docs/review/domain.md": "5b7dc4827b305520aed3f39e46d2da504c8d5e0c04443112bb8e3e9662ed5615",
+    "docs/review/risk-map.md": "97ca76838f9616015782d07d1364b0b40528cf54e8374e1107c4cfc1aea306e1",
+    "docs/review/security.md": "0024228b0468296f9f46c062b5249800aadbe00f35c766bdc132b2dc27e2d09c",
+    "docs/review/testing.md": "322a64870e1e864340a70f07bca715542b91bc50bf1c2c82147d8066ff522168",
+    "docs/review/workflows.md": "62cf733bad582cac9ea037f56ecb8b724e0e511fc99250891a8c88df1ca84ce7"
+  }
+}
