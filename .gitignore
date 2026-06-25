@@ -179,6 +179,7 @@ publish/
 *.publishproj
 
 # Microsoft Azure Web App publish settings. Comment the next line if you want to
+temp_auto_push.bat
 # checkin your Azure Web App publish settings, but sensitive information contained
 # in these scripts will be unencrypted
 PublishScripts/
@@ -361,3 +362,4 @@ docs/goals/
 # macOS Finder metadata
 .DS_Store
 **/.DS_Store
+branch_structure.json
