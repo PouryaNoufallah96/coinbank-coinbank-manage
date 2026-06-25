@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="ClosedXML" />
+		<PackageReference Include="PDFsharp-MigraDoc" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+    <ProjectReference Include="..\CoinBank.Domain\CoinBank.Domain.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="_Report\Exports\Fonts\Roboto-Regular.ttf" LogicalName="CoinBank.Services._Report.Exports.Fonts.Roboto-Regular.ttf" />
+	</ItemGroup>
+
+</Project>

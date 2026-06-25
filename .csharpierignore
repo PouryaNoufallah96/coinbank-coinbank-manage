@@ -1,0 +1,4 @@
+# Keep csharpier off build output and non-C# trees.
+bin/
+obj/
+publish/

@@ -1,0 +1,6 @@
+@CoinBank.Manage_HostAddress = http://localhost:5136
+
+POST {{CoinBank.Manage_HostAddress}}/api/v1/Auth/Login
+Accept: application/json
+
+###

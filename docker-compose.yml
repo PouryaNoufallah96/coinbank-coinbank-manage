@@ -1,0 +1,52 @@
+version: "3"
+services:
+  manage.coinbank.com:
+    image: coinbank.manage
+    container_name: manage.coinbank.com
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3014:80"
+    volumes:
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
+    environment:
+      - ASPNETCORE_URLS=http://+
+      - FirewallSettings__Rules__1__Regex=^(.*)$$
+      - FirewallSettings__Rules__1__IPAddresses__0=144.76.177.153
+      - FirewallSettings__Rules__1__Policy=Allow
+      - FirewallSettings__Rules__0__Regex=^(.*)$$
+      - FirewallSettings__Rules__0__IPAddresses__0=*
+      - FirewallSettings__Rules__0__Policy=Allow
+
+      # Database: same CoinBank Mongo database used by the public API.
+      - MonjoSettings__ConnectionString=$mongodb_connection
+      - MonjoSettings__DatabaseName=$database_name
+
+      # JWT
+      - JwtServiceSettings__Issuer=$jwtservicesettings_issuer
+      - JwtServiceSettings__Audience=$jwtservicesettings_audience
+      - JwtServiceSettings__SignatureKey=$jwtservicesettings_signature_key
+      - JwtServiceSettings__EncryptionKey=$jwtservicesettings_encryption_key
+      - JwtServiceSettings__ExpiresAfter=$jwtservicesettings_expires_after
+      - JwtServiceSettings__AdminExpiresAfter=$jwtservicesettings_admin_expires_after
+      - JwtServiceSettings__AdminUserName=$jwtservicesettings_admin_username
+      - JwtServiceSettings__AdminPassword=$jwtservicesettings_admin_password
+
+      # JWT Client Info
+      - JwtServiceSettings__ClientInfo__web_mainsets=$jwtservicesettings_clientinfo_web_value
+      - JwtServiceSettings__ClientInfo__app_mainappful=$jwtservicesettings_clientinfo_app_value
+
+      # Application Pool Settings -> Applications[0]
+      - ApplicationPoolSettings__Applications__0__ApplicationId=$applicationpoolsettings_applications_0_application_id
+      - ApplicationPoolSettings__Applications__0__PreSharedKey=$applicationpoolsettings_applications_0_pre_shared_key
+      - ApplicationPoolSettings__Applications__0__MasterSignature=$applicationpoolsettings_applications_0_master_signature
+
+      # Application Pool Settings -> Applications[1]
+      - ApplicationPoolSettings__Applications__1__ApplicationId=$applicationpoolsettings_applications_1_application_id
+      - ApplicationPoolSettings__Applications__1__PreSharedKey=$applicationpoolsettings_applications_1_pre_shared_key
+      - ApplicationPoolSettings__Applications__1__MasterSignature=$applicationpoolsettings_applications_1_master_signature
+
+      # Application Pool Settings -> Applications[2]
+      - ApplicationPoolSettings__Applications__2__ApplicationId=$applicationpoolsettings_applications_2_application_id
+      - ApplicationPoolSettings__Applications__2__PreSharedKey=$applicationpoolsettings_applications_2_pre_shared_key
+      - ApplicationPoolSettings__Applications__2__MasterSignature=$applicationpoolsettings_applications_2_master_signature
