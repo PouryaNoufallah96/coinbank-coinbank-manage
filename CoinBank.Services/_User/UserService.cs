@@ -56,20 +56,32 @@ namespace CoinBank.Services._User
         {
             if (string.IsNullOrWhiteSpace(_jwtSettings.AdminUserName) ||
                 string.IsNullOrWhiteSpace(_jwtSettings.AdminPassword) ||
+                string.IsNullOrWhiteSpace(_jwtSettings.AdminWalletAddress) ||
                 NormalizeUserName(_jwtSettings.AdminUserName) != normalizedUserName)
                 return;
+
+            var adminWallet = _jwtSettings.AdminWalletAddress.Trim();
 
             var existing = await _userRepository.AsQueryable()
                 .Where(u => u.UserName == normalizedUserName && u.Role == UserRole.Admin)
                 .FirstOrDefaultAsync();
 
             if (existing != null)
+            {
+                if (string.IsNullOrWhiteSpace(existing.EVMWalletAddress))
+                {
+                    existing.EVMWalletAddress = adminWallet;
+                    await _userRepository.ReplaceOneAsync(existing);
+                }
+
                 return;
+            }
 
             var user = new User
             {
                 UserName = normalizedUserName,
                 PasswordHash = _passwordService.Hash(_jwtSettings.AdminPassword),
+                EVMWalletAddress = adminWallet,
                 Role = UserRole.Admin,
                 Status = UserStatus.Active,
                 Permissions = [Permissions.ReportView],

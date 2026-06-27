@@ -7,7 +7,8 @@ runs as a separate four-layer sibling patterned after `slt.manage`.
 
 **Admin / Reporter**:
 A `User` row with `Role=Admin` who authenticates by username/password and receives report
-permissions in JWT claims.
+permissions in JWT claims. Like every user it also carries a wallet (`EVMWalletAddress`), since the
+shared `Users` collection is read by the public API.
 _Avoid_: treating admins as wallet-auth customers; adding a separate admin database when the
 shared `Users` collection is the reference pattern.
 
