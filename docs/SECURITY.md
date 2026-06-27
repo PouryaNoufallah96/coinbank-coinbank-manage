@@ -6,6 +6,9 @@ Rules:
 
 - Admin report endpoints require the custom `Utilities.Filters.AuthorizeAttribute` with
   `RequireActiveUser = true`, `RequireAdmin = true`, and `Permissions.ReportView`.
+- The seeded admin must carry a wallet: set `AdminWalletAddress` alongside `AdminUserName` /
+  `AdminPassword`. The shared `Users` collection is also read by the public API, which expects that
+  field to be populated rather than blank.
 - Admin credentials, JWT keys, application pre-shared keys, and Mongo credentials must come from
   environment/local untracked config in real deployments.
 - Do not read or commit `.env` or `.env.*`.

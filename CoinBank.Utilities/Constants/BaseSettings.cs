@@ -14,6 +14,7 @@ namespace Utilities.Constants
         public int AdminExpiresAfter { get; set; }
         public string AdminUserName { get; set; }
         public string AdminPassword { get; set; }
+        public string AdminWalletAddress { get; set; }
         public Dictionary<string, string> ClientInfo { get; set; }
     }
     #endregion
